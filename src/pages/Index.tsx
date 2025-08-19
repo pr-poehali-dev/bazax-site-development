@@ -42,26 +42,35 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-br from-blue-50 via-white to-gray-50">
         <div className="container mx-auto text-center">
-          <div className="animate-fade-in">
+          <div className="animate-fade-in max-w-5xl mx-auto">
+            <div className="mb-8">
+              <img 
+                src="https://cdn.poehali.dev/files/c336caf3-3a0f-4346-9fff-e5cb0a11726e.jpg" 
+                alt="BAZAX Logo" 
+                className="h-20 md:h-24 w-auto mx-auto mb-6 animate-bounce-subtle"
+              />
+            </div>
+            
             <h1 className="text-5xl md:text-7xl font-bold text-secondary mb-6" style={{fontFamily: 'Montserrat, sans-serif'}}>
               BAZAX
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl text-primary mb-8 max-w-3xl mx-auto font-light" style={{fontFamily: 'Montserrat, sans-serif'}}>
               Проектирование будущего сегодня
-            </p>
-            <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
-              Мы создаем инновационные архитектурные и инженерные решения, которые формируют облик современных городов
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+              Ведущая проектная организация, создающая инновационные архитектурные решения 
+              для промышленных, жилых и общественных объектов с применением передовых технологий
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3">
-                <Icon name="Building2" className="mr-2" size={20} />
-                Наши проекты
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300">
+                <Icon name="Rocket" className="mr-2" size={20} />
+                Начать проект
               </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3">
-                <Icon name="Phone" className="mr-2" size={20} />
-                Консультация
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300">
+                <Icon name="Play" className="mr-2" size={20} />
+                Смотреть портфолио
               </Button>
             </div>
           </div>
